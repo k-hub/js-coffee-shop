@@ -48,19 +48,28 @@
     // Set these variables to their DOM elements
 
     var myRevenueMessage = document.getElementById("message");
-    
-
-    
     var myImage = document.getElementById("coffee-image");
 
+    // modifying object
+    
     myImage.setAttribute('src', 'static/coffee_beans.jpg');
 
+    // make coffee function block
     function makeCoffee(){
         myImage.setAttribute('src', 'static/coffee_mug.jpg');
     }
 
+    // ****Inline function example:
+
+        // myImage.addEventListener('click', function {
+        //     myImage.setAttribute('src', 'static/coffee_mug.jpg');
+        // });
+
+    // event listener
+
     myImage.addEventListener('click', makeCoffee);
 
+    
 
     // use this JavaScript object in further study step
 
